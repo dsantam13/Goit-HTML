@@ -1,0 +1,7 @@
+body {
+    background-image: url('.././img/barber.png');
+    background-repeat: no-repeat;
+    /*background-position: right 30px top 20px;*/
+    background-size: contain;
+    color: white;
+}
