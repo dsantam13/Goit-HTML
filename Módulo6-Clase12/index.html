@@ -10,11 +10,13 @@
     <form name="login">
       <label>
         Email
-        <input type="email" name="email" required />
+        <input class="form-input" type="email" name="email" required />
       </label>
       <label>
         Phone
         <input
+          id="phone"
+          class="form-input"
           type="tel"
           name="phone"
           placeholder="551-123-4567"
@@ -26,19 +28,32 @@
       <label>
         Password
         <input
+          class="form-input"
           type="password"
           name="password"
           minlength="4"
           maxlength="8"
           required
-          pattern="^(?=.*\d)"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          title="La contraseña debe contener: 1. Una mayúscula 2. Una minúscula 3. Un número 4. Un caracter especial"
         />
       </label>
       <label>
         ¿Cuántos boletos quieres?
-        <input type="number" name="ticket" required min="1" max="8" />
+        <input
+          class="form-input"
+          type="number"
+          name="ticket"
+          required
+          min="1"
+          max="8"
+        />
       </label>
-      <button type="submit">Login</button>
+
+      <button class="btn" type="submit">Iniciar Sesión</button>
+      <button class="btn" type="submit" disabled>
+        Crear Cuenta (Próximamente)
+      </button>
     </form>
   </body>
 </html>

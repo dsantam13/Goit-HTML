@@ -14,6 +14,26 @@ label {
     margin-bottom: 8px;
 }
 
+.btn:disabled {
+    background-color: #36a420;
+}
+
+.form-input:in-range {
+    border-color: #4caf50;
+}
+
+.form-input:out-of-range {
+    border-color: #f44336;
+}
+
+.form-input:valid {
+    border-color: #4caf50;
+}
+
+.form-input:invalid {
+    border-color: #f44336;
+}
+
 button {
     display: inline-flex;
     padding: 12px 32px;
