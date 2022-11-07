@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form
+      id="sigup_form"
+      class="form"
+      name="sigup_form"
+      autocomplete="on"
+      novalidate
+    >
+      <label for="user_email">
+        Ingresa tu Email:
+        <input
+          id="user_email"
+          type="email"
+          name="email"
+          autofocus
+          placeholder="tucorreo@email.com"
+        />
+      </label>
+      <label for="user_password">
+        Password
+        <input
+          id="user_password"
+          type="password"
+          name="password"
+          minlength="6"
+          maxlength="12"
+        />
+      </label>
+      <label for="user_password_two">
+        Verifica tu password
+        <input id="user_password_two" type="password" name="verifica" />
+      </label>
+      <p>Elige el tipo de cuenta</p>
+      <label for="user_type">
+        <input
+          id="user_type"
+          type="radio"
+          name="user_type"
+          value="free"
+          checked
+        />
+        Free
+      </label>
+      <label for="user_type">
+        <input id="user_type" type="radio" name="user_type" value="plus" />
+        Plus
+      </label>
+      <label for="user_type">
+        <input id="user_type" type="radio" name="user_type" value="premium" />
+        Premium
+      </label>
+
+      <p>Tipo de música favorita</p>
+      <label>
+        <input type="checkbox" name="music" value="Rock" />
+      </label>
+      <label>
+        <input type="checkbox" name="music" value="Pop" />
+      </label>
+      <label>
+        <input type="checkbox" name="music" value="Salsa" />
+      </label>
+
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
