@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Validación de formularios</title>
+  </head>
+  <body>
+    <form name="login">
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Phone
+        <input
+          type="tel"
+          name="phone"
+          placeholder="551-123-4567"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          title="El núemro debe contener guiones por ejemplo 551-123-4567"
+        />
+      </label>
+      <label>
+        Password
+        <input
+          type="password"
+          name="password"
+          minlength="4"
+          maxlength="8"
+          required
+          pattern="^(?=.*\d)"
+        />
+      </label>
+      <label>
+        ¿Cuántos boletos quieres?
+        <input type="number" name="ticket" required min="1" max="8" />
+      </label>
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
